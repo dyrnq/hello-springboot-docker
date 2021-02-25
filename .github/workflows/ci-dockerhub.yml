@@ -31,13 +31,13 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
 
-    -
-      name: Configure git
-      run: |
-        git config --global committer.email "dyrnq@qq.com"
-        git config --global committer.name "dyrnq"
-        git config --global author.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git config --global author.name "${GITHUB_ACTOR}"
+    # -
+    #   name: Configure git
+    #   run: |
+    #     git config --global committer.email "dyrnq@qq.com"
+    #     git config --global committer.name "dyrnq"
+    #     git config --global author.email "${GITHUB_ACTOR}@users.noreply.github.com"
+    #     git config --global author.name "${GITHUB_ACTOR}"
 
     -
       name: Checkout main branch
