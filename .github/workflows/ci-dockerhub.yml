@@ -2,8 +2,8 @@ name: CI to Docker Hub
 on:
   push:
     #branches: [ main ]
-  pull_request:
-    #branches: [ main ]    
+  #pull_request:
+    #branches: [ main ]
   
 jobs:
   build:
@@ -41,7 +41,9 @@ jobs:
 
     -
       name: Checkout main branch
-      run: git checkout main
+      run: |
+        git branch -a 
+        git checkout main
 
 
     -
