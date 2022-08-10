@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:19-jdk-alpine
 RUN addgroup -S demo && adduser -S demo -G demo
 ADD target/*.jar app.jar
 USER demo
